@@ -3,13 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
 	<link rel="stylesheet" href="style.css">
 	<title>Home Page</title>
 </head>
-<body style="background-color:#c6b5dc">
-	<header>
+<body style="background-color: #c7d7c7;">
+	<header style="background-color: #c6b5dc">
 		<nav>
 			<div class="left"></div>
+		<!--	<img src="Screenshot 2024-10-30 195735.png" alt="" style="width:5%; height: 5%;margin-top: 0%;display: block;margin-left: auto;margin-right: auto;">   -->
 			<ul>
 				<li><a href="#home1">ORDER ONLINE</a></li>
 				<li><a href="#home">GROCERY</a></li>
@@ -19,13 +22,21 @@
 	</header>
 	<main>
 		<div id="home1" class="leftsection">
-			<p class="centered" style="font-family:Lucida Handwriting">SWEET BEKARY</p>
+			<p class="centered" style="font-family:Sofia;">SWEET BEKARY</p>
 			<p class="lftc">Our biggest launch ever is here:<br> frozen-to-thaw Banana Pudding made <br>with real bananas and whipped<br> to perfection</p>
+			<button onclick="window.location.href=''" class="button2" style=" top: 50%;">Shop Now</button>
 			<img src="baking-pastry-cta-2up.jpg" alt="Banana Pudding" class="center">
 		</div>
-		<section id="home" class="CollectionTile__cover">
-			<div class="sec-content">
+		<section id="home" class="CollectionTile_cover">
+			<div id="sample" class="sec-content">
 				<h2 style="font-family:Lucida Handwriting; text-align: center;font-size: 200%;">Take A Bite!</h2>
+				<div class="se-section">
+					<img src="brawnie.jpg" alt="Strawberry Brownies">
+					<div class="track-info">
+						<h3>STRAWBERRY BROWNIES</h3>
+						<p>One layers of super-rich Strawberry caBrownieske and silky buttercream means pure, indulgent bliss</p>
+					</div>
+				</div>
 				<div class="se-section">
 					<img src="cake.jpg" alt="Chocolate Cake">
 					<div class="track-info">
@@ -33,7 +44,7 @@
 						<p>Three layers of super-rich chocolate cake and silky chocolate buttercream means pure, indulgent bliss</p>
 					</div>
 				</div>
-				<div id="sample" class="se-section">
+				<div class="se-section">
 					<img src="pie.jpg" alt="Blueberry Pie">
 					<div class="track-info">
 						<h3>YUMMY PIES</h3>
@@ -47,21 +58,28 @@
 						<p>A sumptuous treat with a golden, buttery base that is perfectly balanced</p>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="Collection_cover" style="background-color: #fcc9d0;">
-			<div class="sec-content" style="background-color: #eedede;">
-				<h2 style="font-family:Lucida Handwriting; text-align: center;font-size: 200%;">We Deliver Everywhere!</h2>
-				<h4>We make it easy for you to get Magnolia Bakery's best, wherever you are. Order now for nationwide shipping, <br>place an order to pickup at your local shop, or get in touch with our team to arrange custom catering for your next event.</h4>
+		
 			</div>
 		</section>
 		<div id="join" class="leftsection" style="background-color:#fcc9d0;">
-			<p class="centered2" style="font-family:Lucida Handwriting">Join Us</p>
-			<p class="lftc2">Our catering, gifting and events team is ready to fill your event or <br>celebration with a custom selection of Magnolia Bakery's best <br> creations. No occasion is too large—or too small!</p>
+			<p class="centered2" style="font-family:Sofia; color: rgb(108, 8, 8);">Join Us</p>
+			<p class="lftc2" style=" color: rgb(108, 8, 8);">Our catering, gifting and events team is ready to fill your event or <br>celebration with a custom selection of Magnolia Bakery's best <br> creations. No occasion is too large—or too small!</p>
+			<button onclick="window.location.href=''" class="button" style="   bottom: -105%;left: 65%;">GET STARTED</button>
 			<img src="Screenshot 2024-10-30 225455.png" alt="Join Us" style="width:40%;">
 		</div>
-		<footer>
-			<h2 class="footer__title" style="background-color: #c7d7c7;">Have a question?<br>We're always here to lend a helping hand.<br>Consumer Care Team hours are Monday-Friday, 9am - 5pm EST <br><a href="mailto:someone@example.com">CONTACT US</a></h2>
+			<div  >
+					<h2 style="font-family:Sofia;text-align: center;font-size: 250%;left: 50%;top: 260%;position: absolute;transform: translate(-50%, -50%);">We Deliver Everywhere!</h2>
+				<img src="done.jpg" alt="Banana Pudding" style="width:100%;margin-top: 0%;">
+				<div class="center2">
+				<h4 style="font-family: Lucida Sans;">We make it easy for you to get Magnolia Bakery's best, wherever you are. Order now for nationwide shipping, <br>place an order to pickup at your local shop, or get in touch with our team to arrange custom catering for your next event.</h4>
+				<button onclick="window.location.href=''" class="button" style=" top: 115%;left: 40%;">GET STARTED</button>
+			</div>
+			</div>
+		<footer class="footer_title">
+			<h3>Have a question?<br>We're always here to lend a helping hand. </h3>
+			<h5>Consumer Care Team hours are Monday-Friday, 9am - 5pm EST</h5>
+			<h6>HELP CENTER</h6>
+			<h5><a href="mailto:someone@example.com">CONTACT US</a></h5>
 		</footer>
 	</main>
 </body>
