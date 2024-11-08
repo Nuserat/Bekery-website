@@ -65,13 +65,13 @@ margin: 0;
     font-size: 135%;
     position: absolute;
     left: 70%;
-    bottom: 100%;
+    bottom: -100%;
     transform: translate(-50%, -50%);
 }
 
 .lftc2 {
     position: absolute;
-    bottom: 110%;
+    bottom: -110%;
     right: 3%;
     text-align: center;
     font-size: 85%;
