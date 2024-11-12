@@ -191,3 +191,510 @@ nav ul li a:hover {
     color: rgb(21, 8, 94) ; 
     font-size: 1.1rem;
 }
+.padding{
+    font-size: 18px !important;
+    padding: 2% 5%;
+    float: right;
+}
+
+.large{
+    font-size: 18px !important;
+    padding: 2% 5%;
+    float: left;
+    width: 33.33333%;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+:root {
+    font-size: 16px;
+    --yellowTrans: rgba(249, 228, 148, 0.5);
+}
+
+body {
+    font-family: "Kaushan Script", cursive;
+    /* background-image: url(./media/imgBack.jpeg); */
+   /* background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url(./media/imgBack.jpeg) center/cover fixed no-repeat;
+    */ background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    height: 5rem;
+    background-color: white;
+    color: #ef7998;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
+    width: 100vw;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.left {
+    gap: 10rem;
+
+}
+
+/*
+.right {
+    font-size: 1rem;
+    color: black;
+    gap: 5rem;
+}
+
+.phone,
+.cart {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart:hover img:first-child,
+.cart img:nth-child(2) {
+    display: none;
+}
+
+.cart {
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: #ef7998;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    border: 1px solid #ef7998;
+}
+
+.cart:hover img:nth-child(2) {
+    display: block;
+}
+*/
+
+
+.welcome p,
+.allCakes p,
+.about p:nth-child(3) {
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    color: black;
+    font-size: 1rem;
+}
+
+.about p:nth-child(3):hover,
+.allCakes p:hover,
+.welcome p:hover {
+    background-color: black;
+    color: #ef7998;
+    width: max-content;
+}
+
+.about p:nth-child(3) {
+    font-size: 1rem;
+    width: max-content;
+}
+
+.about {
+    width: 24rem;
+    color: #6c757d;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+.about h1 {
+    color: #6c757d;
+    font-weight: 200;
+}
+
+.about span,
+.welcome span {
+    font-size: 4rem;
+    margin-left: 1rem;
+    color: #ef7998;
+}
+
+.section2 {
+    height: auto;
+    background-color: #eeeeee;
+}
+
+.section2 .about {
+    margin: auto;
+}
+
+.allCakes {
+    display: flex;
+    gap: 4rem;
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.search img {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 100%;
+
+}
+
+.search p {
+    background-color: #ef7998;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.search input {
+    width: 32rem;
+    height: 2.5rem;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+    padding-left: 1rem;
+}
+
+.search {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
+.search input:focus {
+    outline-color: #74cde2e8;
+    border: none;
+
+}
+
+.pics1 {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+}
+
+.pics1 img {
+    /* overflow: hidden; */
+    max-width: 22rem;
+    max-height: 17rem;
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 0;
+    position: relative;
+    transition: all 1s ease-in-out
+}
+
+.imgcart {
+    position: relative;
+    width: max-content;
+    height: max-content;
+
+}
+
+p.movecart img {
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.imgcart p {
+    position: absolute;
+    background-color: #f9e494;
+    border-top-left-radius: 12px;
+    bottom: -3.6rem;
+    right: -2rem;
+    /* z-index: 1; */
+    width: 0rem;
+    height: 0rem;
+    translate: -30px -57px 0;
+    transition: all 1s ease-in-out
+}
+
+.pics1:hover .imgcart p {
+    padding: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    /* z-index: 1; */
+}
+
+.pics1:hover p.movecart img {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.caption {
+    display: flex;
+    width: auto;
+    height: 4.5rem;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-size: 1.3rem;
+    z-index: 1;
+    position: relative;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70rem;
+    height: auto;
+    gap: 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.pics1 img:hover {
+    transform: scale(1.2);
+}
+
+details {
+    display: none;
+}
+
+@media (max-width:640px) {
+    :root {
+        font-size: 10px;
+    }
+
+
+
+    header {
+        width: 70rem;
+        height: max-content;
+        /* display: flex; */
+        padding-top: 2rem;
+
+    }
+
+    header img {
+        width: 12rem;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .section1w {
+        width: 70rem;
+    }
+
+    .welcome {
+        width: max-content;
+        text-align: center;
+        height: auto;
+        margin: 20rem 0rem;
+        margin-left: 5rem;
+
+
+    }
+
+    .welcome h1,
+    .about h1 {
+        font-size: 7rem;
+    }
+
+    .welcome span,
+    .about span {
+        font-size: 12rem;
+
+    }
+
+    .welcome p {
+        width: 30rem;
+        height: 12rem;
+        font-size: 6rem;
+        border: 5px solid black;
+        margin-top: 6rem;
+        margin-bottom: 12rem;
+
+    }
+
+    .section1 {
+
+        flex-direction: column;
+        width: 70rem;
+        height: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 7rem;
+        padding-bottom: 20rem;
+    }
+
+    .about {
+        width: 50rem;
+        gap: 2rem;
+        flex-direction: column;
+
+
+    }
+
+
+    .welcome h1 {
+        font-size: 2.5rem;
+        color: white;
+
+    }
+
+    .about h1 {
+        font-size: 7rem;
+    }
+
+    .about p:nth-child(2) {
+        font-size: 5rem;
+    }
+
+    .about p:nth-child(3) {
+        font-size: 7rem;
+        border: 5px solid black;
+        margin: 10rem 0rem;
+    }
+
+    .both img {
+        width: 42rem;
+        height: 32rem;
+        z-index: 1;
+        position: absolute;
+        margin: auto;
+    }
+
+    .move {
+        border: 8px solid #f9e494;
+        width: 43.3rem;
+        height: 33.5rem;
+        top: -2.65rem;
+        right: 2.4rem;
+    }
+
+    .both {
+        width: 42rem;
+        height: 32rem;
+        margin: auto;
+    }
+
+    .both:hover .move {
+        translate: 30px 20px 1px;
+    }
+
+    .section2 {
+        width: 70rem;
+        height: auto;
+        padding-bottom: 20rem;
+    }
+
+    .allCakes {
+        width: 60rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .allCakes p {
+        font-size: 4rem;
+    }
+
+    .search p {
+        width: 7rem;
+        height: 6.8rem;
+    }
+
+    .search img {
+        height: 4rem;
+        width: 5rem;
+
+    }
+
+    .search input {
+        height: 6.8rem;
+        font-size: 3rem;
+    }
+
+    .pictures {
+        padding-top: 15rem;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        gap: 25rem;
+    }
+
+    .pics1 {
+        transform: scale(2);
+    }
+
+    .pics1 {
+        width: max-content;
+        height: max-content;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+
+    }
+
+    .pics1 img {
+        /* overflow: hidden; */
+        max-width: 22rem;
+        max-height: 17rem;
+        display: flex;
+        border-radius: 5px 5px 0px 0px;
+        z-index: 0;
+        position: relative;
+        transition: all 1s ease-in-out
+    }
+
+    .imgcart p {
+        bottom: -6.2rem;
+        right: -3rem;
+
+    }
+
+    details {
+        display: block;
+        font-size: 4rem;
+
+
+    }
+
+    details>summary {
+        height: max-content;
+
+    }
+
+
+}
