@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Details</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.delivery-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.option {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+.option h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.option p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.selected-option {
+    margin-top: 30px;
+    font-size: 1.25rem;
+    padding: 20px;
+    background-color: #eef1f6;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delivery Options</h1>
+        <div class="delivery-options">
+            <div class="option" id="bicycle">
+                <h2>Bicycle</h2>
+                <p>Price: <strong>$45</strong></p>
+                <button onclick="selectOption('Bicycle', 45)">Select</button>
+            </div>
+            <div class="option" id="motorcycle">
+                <h2>Motorcycle</h2>
+                <p>Price: <strong>$100</strong></p>
+                <button onclick="selectOption('Motorcycle', 100)">Select</button>
+            </div>
+            <div class="option" id="taxi">
+                <h2>Taxi</h2>
+                <p>Price: <strong>$200</strong></p>
+                <button onclick="selectOption('Taxi', 200)">Select</button>
+            </div>
+            <div class="option" id="premium">
+                <h2>Premium</h2>
+                <p>Price: <strong>$350</strong></p>
+                <button onclick="selectOption('Premium', 350)">Select</button>
+            </div>
+        </div>
+
+        <div class="selected-option" id="selected-option">
+            <h2>Selected Delivery Option:</h2>
+            <p id="delivery-details">No option selected yet.</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle selecting a delivery option
+function selectOption(optionName, price) {
+    // Display selected delivery option details
+    const selectedOptionDiv = document.getElementById('selected-option');
+    const deliveryDetails = document.getElementById('delivery-details');
+    
+    deliveryDetails.innerHTML = `You have selected <strong>${optionName}</strong> for <strong>$${price}</strong>.`;
+    
+    // Show the selected option section
+    selectedOptionDiv.style.display = 'block';
+}
+
+    </script>
+</body>
+</html>
